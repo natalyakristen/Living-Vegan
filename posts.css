@@ -1,0 +1,98 @@
+body {
+    background-color:whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500; 
+
+    display: grid; 
+    grid-template:
+        "header header header header" 10em
+        ". main sidebar ." auto
+        "footer footer footer footer" 10em
+        / 0fr 10fr 0fr; 
+grid-column-gap: 0em; 
+
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: mediumaquamarine;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 300px;
+    padding: 10px 0;
+    font-size: medium;
+}
+
+header::after {
+    content: '';
+    display: table; 
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 60px;
+
+}
+
+nav a {
+    color: #444;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+footer {
+    grid-area: footer; 
+    background-color: mediumaquamarine;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+}
+
+main {
+    margin-top: 2em;
+}
+
+.burger-img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 2em;
+   padding-bottom: 2em;
+}
+

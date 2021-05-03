@@ -1,0 +1,179 @@
+
+body {
+    background-color:whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500; 
+
+    display: grid; 
+    grid-template:
+        "header header header header" 10em
+        ". main sidebar ." auto
+        "footer footer footer footer" 10em
+        / 0fr 7fr 3fr 0fr; 
+grid-column-gap: 0em; 
+
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: mediumaquamarine;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 300px;
+    padding: 10px 0;
+    font-size: medium;
+}
+
+header::after {
+    content: '';
+    display: table; 
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 60px;
+
+}
+
+nav a {
+    color: #444;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+footer {
+    grid-area: footer; 
+    background-color: mediumaquamarine;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+}
+
+
+main {
+    margin-top: 2em;
+}
+
+.contact-title {
+    color: gray;
+    text-transform: uppercase;
+    margin-left: 1.5em;
+}
+
+.contact-title h1 {
+    font-size: 32px;
+    line-height: 10px; 
+}
+
+form {
+    margin-top: 50px;
+}
+
+.form-control {
+    width: 800px; 
+    background: transparent; 
+    border: none;
+    outline: none; 
+    border-bottom: 1px solid gray;
+    color: black; 
+    font-size: 18px;
+    margin-bottom: 16px; 
+    margin-left: 1.5em; 
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: gray; 
+    border-color: transparent;
+    color: white;
+    font-size: 20px; 
+    font-weight: bold;
+    letter-spacing: 2px; 
+    height: 50px; 
+    margin-top: 20px; 
+}
+
+aside {
+    grid-area: sidebar;
+    background: darkgrey;
+    padding: 1em; 
+}
+
+.aside-title {
+    text-align: center;
+    text-transform: uppercase; 
+    color: white;
+    font-size: 30px;
+    margin-bottom: 2em;
+}
+
+.email {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 3em; 
+}
+
+
+.PO-box-1 {
+    display: block;
+    text-align: center; 
+    font-size: 25px;
+}
+
+.PO-box-2 {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+
+.PO-box-3 {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+
+.PO-box-4 {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
